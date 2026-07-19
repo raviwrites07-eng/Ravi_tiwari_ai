@@ -1,0 +1,70 @@
+Job Title: Software Development Engineer I (SDE-1)
+
+Company: TechNova Solutions
+
+Location: Bangalore, India
+
+Experience Required:
+0-2 years
+
+Education:
+Bachelor's degree in Computer Science, Information Technology, Artificial Intelligence, Data Science, or a related field.
+
+Job Description:
+
+We are looking for a passionate Software Development Engineer I (SDE-1) to join our engineering team. The ideal candidate should have strong programming skills, good knowledge of data structures and algorithms, and experience building scalable backend applications.
+
+Responsibilities:
+
+• Design, develop, test, and maintain software applications.
+• Write clean, efficient, and maintainable code.
+• Develop REST APIs and backend services.
+• Collaborate with frontend developers, QA engineers, and product managers.
+• Debug production issues and improve application performance.
+• Participate in code reviews and technical discussions.
+• Learn new technologies and contribute to engineering best practices.
+
+Required Skills:
+
+• Python
+• FastAPI
+• SQL
+• Git
+• Object-Oriented Programming (OOP)
+• Data Structures and Algorithms
+• REST APIs
+• Linux
+• JSON
+• Problem Solving
+
+Preferred Skills:
+
+• Docker
+• AWS
+• Redis
+• MongoDB
+• CI/CD
+• Unit Testing
+• Microservices
+• Kafka
+
+Qualifications:
+
+• Strong understanding of algorithms and data structures.
+• Good communication and teamwork skills.
+• Experience with backend development projects.
+• Familiarity with software development lifecycle (SDLC).
+• Ability to learn quickly and work in a fast-paced environment.
+
+Nice to Have:
+
+• Internship experience.
+• Personal or open-source projects.
+• Knowledge of cloud computing.
+• Experience with AI or Machine Learning projects.
+
+Experience:
+1 year of software development experience (internships and personal projects may be considered).
+
+Employment Type:
+Full-Time
