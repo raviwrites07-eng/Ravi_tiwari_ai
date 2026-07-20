@@ -1,0 +1,58 @@
+# JSON Validation with Pydantic
+
+A beginner-friendly Python project demonstrating how to validate and parse JSON data using the Pydantic library.
+
+## Features
+
+- Validate JSON data using Pydantic models
+- Automatic type conversion
+- Field validation
+- Easy-to-understand example
+- Clean and modular code
+
+## Technologies Used
+
+- Python 3.11+
+- Pydantic
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/json-pydantic-demo.git
+```
+
+Move into the project
+
+```bash
+cd json-pydantic-demo
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the project
+
+```bash
+python json_pydantic.py
+```
+
+## Project Structure
+
+```
+json-pydantic-demo
+│
+├── json_pydantic.py
+├── README.md
+├── requirements.txt
+├── .gitignore
+└── .env.example
+```
+
+## Author
+
+Ravi Tiwari

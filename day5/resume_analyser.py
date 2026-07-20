@@ -10,9 +10,9 @@ from docx import Document
 
 load_dotenv()
 
-# ===========================
-# Models
-# ===========================
+
+# pahle job description ko deal karte hain fir resume ko deal karenge
+
 
 class JobDescription(BaseModel):
     post: str
@@ -40,9 +40,9 @@ class Resume(BaseModel):
 job_schema = JobDescription.model_json_schema()
 resume_schema = Resume.model_json_schema()
 
-# ===========================
-# Resume Reader
-# ===========================
+
+# Resume Reader(resume ko read karne ke liye class banayenge)
+
 
 class ResumeReader:
 
@@ -111,9 +111,9 @@ class ResumeReader:
         return resumes
 
 
-# ===========================
+
 # Groq Client
-# ===========================
+
 
 my_api_key = os.getenv("GROQ_API_KEY")
 
@@ -128,9 +128,9 @@ response_format = {
     "type": "json_object"
 }
 
-# ===========================
+
 # Parse Job Description
-# ===========================
+
 
 jd_text = Path("job_description.txt").read_text(encoding="utf-8")
 
@@ -174,19 +174,12 @@ jd_data = json.loads(answer)
 
 job_description = JobDescription(**jd_data)
 
-#print(job_description)
 
-# ===========================
-# Read All Resumes
-# ===========================
 
 reader = ResumeReader()
 
 resume_texts = reader.read_resume_folder("resumes")
 
-# ===========================
-# Parse Every Resume
-# ===========================
 
 parsed_resumes = []
 
@@ -235,14 +228,7 @@ for resume_text in resume_texts:
 
     parsed_resumes.append(resume)
 
-# ===========================
-# Output
-# ===========================
 
-#print("\nJob Description\n")
-#print(job_description)
-
-#print("\nParsed Resumes\n")
 
 for resume in parsed_resumes:
     print(resume)
@@ -251,7 +237,7 @@ class MatchResult(BaseModel):
     overall_score: int
     summary: str    
 match_schema = MatchResult.model_json_schema()  
-#print("\nCandidate Evaluation\n")
+
 
 match_system_prompt = f"""
 You are an experienced Technical HR Recruiter.
