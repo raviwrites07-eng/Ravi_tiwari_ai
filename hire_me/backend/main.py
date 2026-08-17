@@ -11,6 +11,7 @@ from pydantic import BaseModel
 from pypdf import PdfReader
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 
 
@@ -35,6 +36,13 @@ model = "openai/gpt-oss-20b"
 
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 
