@@ -28,10 +28,10 @@ function App() {
     try {
       // Send question to FastAPI backend
       const response = await fetch(
-        `http://127.0.0.1:8000/ask?question=${encodeURIComponent(
-          currentQuestion
-        )}`
-      );
+         `https://ravi-tiwari-ai.onrender.com/ask?question=${encodeURIComponent(
+            currentQuestion
+       )}`
+     );
 
       if (!response.ok) {
         throw new Error("Backend request failed");
